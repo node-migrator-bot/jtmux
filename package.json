@@ -16,7 +16,9 @@
   },
   "main" : "./lib/jtmux/jtmux",
   "bin":          {
-    "jtmux":     "./bin/jtmux"
+    "jtmux":     "./bin/jtmux",
+    "jtmux-session-name": "./bin/jtmux-session-name",
+    "jtmux-session-create": ".bin/jtmux-session-create"
   },
   "homepage":     "http://jtmux.clauswitt.com",
   "repository":   {
