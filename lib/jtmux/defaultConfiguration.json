@@ -1,0 +1,7 @@
+{
+  "name": "jtmux-default",
+  "windows": [
+    {"name": "first window", "command": "top"},
+    {"name": "second window", "default":true}
+  ]
+}
