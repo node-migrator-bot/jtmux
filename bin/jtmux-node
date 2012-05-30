@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+var OptionParser = require('./../parseopt').OptionParser;
+
+var path = require('path');
+var fs   = require('fs');
+var lib  = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
+var output = require(lib + '/jtmux/command').run(false);
+console.log(output);
+

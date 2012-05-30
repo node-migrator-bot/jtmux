@@ -1,12 +1,10 @@
 #!/bin/sh
 my_path=`dirname $0`
-session_name=`$my_path/jtmux-session-name`
-
+session_name=`$my_path/jtmux-session-name $@`
 function create_session {
-  new_session_name=`$my_path/jtmux-session-create`
-  echo $new_session_name
+  new_session_name=`$my_path/jtmux-session-create $@`
   tmux -2 attach-session -t $new_session_name
 }
 
-tmux -2 attach-session -t $session_name || create_session
+tmux -2 attach-session -t $session_name || create_session $@
 
