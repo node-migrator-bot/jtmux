@@ -3,7 +3,7 @@
   "description":  "tmux session creation and automation tool",
   "keywords":     ["commandline", "tmux"],
   "author":       "Claus Witt",
-  "version":      "0.0.2",
+  "version":      "0.0.3",
   "licenses":     [{
     "type":       "MIT",
     "url":        "http://github.com/clauswitt/jtmux/raw/master/LICENSE"
